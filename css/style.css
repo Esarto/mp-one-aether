@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+/* ------------------------------------------- general */
+
+h1 {
+    margin: 0;
+}
+
+.--uppercase {
+    text-transform: uppercase;
+}
+
+.--letter-space {
+    letter-spacing: .25em;
+}
+
+
+/* ------------------------------------------- navbar */
+
+.--navbar-logo {
+    width: 66px;
+    margin: 0 auto;
+}
+
+.--img-logo {
+    max-width: 100%;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 23px;
+}
+
+.navbar {
+    padding-bottom: 1.4em;
+    border-bottom: 1px solid #bbb;
+}
+
+.navbar, .navbar-nav {
+    margin-top: 1em;
+}
+
+.--menu-item {
+    text-align: center;
+}
+
+.--menu-link {
+    display: block;
+    font-weight: bold;
+    color: #000;
+    padding: .5em;
+}
+
+.--menu-link:hover {
+    color: #333;
+}
+
+/* ------------------------------------------- home */
+
+.--landing {
+    margin: 17em 0;
+}
+
+.--landing h1 {
+    font-size: 4em;
+}
+
+.--landing p {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.--twitter-container {
+    height: 100px;
+}
+
