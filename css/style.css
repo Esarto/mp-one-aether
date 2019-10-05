@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,8 +10,22 @@ body {
 
 /* ------------------------------------------- general */
 
+.row {
+    padding: 2.5em .5em;
+}
+
 h1 {
     margin: 0;
+}
+
+.--section-heading {
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .--uppercase {
@@ -38,16 +56,30 @@ h1 {
 }
 
 .navbar {
-    padding-bottom: 1.4em;
+    padding-bottom: 1.5em;
     border-bottom: 1px solid #bbb;
+}
+
+.navbar button:focus {
+    outline: none;
 }
 
 .navbar, .navbar-nav {
     margin-top: 1em;
 }
 
+.navbar-nav li:nth-child(6) {
+    margin-top: .4em;
+}
+
 .--menu-item {
     text-align: center;
+}
+
+.--menu-item a span {
+    text-transform: initial;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 
 .--menu-link {
@@ -61,10 +93,38 @@ h1 {
     color: #333;
 }
 
+.--social-links {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.--social-links-item {
+    display: inline-block;
+
+}
+
+.--social-links-item a {
+    margin: 0 .5em;
+}
+
+.--social-links-item a i {
+    color: #3D444A;
+    font-size: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    transition: color .25s ease-in-out;
+}
+
+.--social-links-item a i:hover {
+    color: #555;
+}
+
 /* ------------------------------------------- home */
 
 .--landing {
     margin: 17em 0;
+    padding: 0;
 }
 
 .--landing h1 {
@@ -76,7 +136,99 @@ h1 {
     font-weight: 400;
 }
 
-.--twitter-container {
-    height: 100px;
+/* ------------------------------------------- about */
+
+.--about-page-section {
+    text-align: center
 }
 
+.--about-portrait {
+    width: 150px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.--about-page {
+    background-color: #3D444A;
+    color: #fff;
+}
+
+.--twitter {
+    margin-bottom: 1.75em;
+}
+
+/* ------------------------------------------- clients */
+
+.--client-card-frame {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.--client-card {
+    background-color: #F3F3F3;
+    padding: 1em;
+    margin-bottom: 1.75em;
+    border-radius: 20px;
+}
+
+.--client-link {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.--client-logo {
+    width: 60%;
+}
+
+.--client-title {
+    padding: .5em 0;
+}
+
+/* ------------------------------------------- contact */
+
+.--contact-page {
+    background-color: #3D444A;
+    color: #fff;
+}
+
+.--contact-page-form {
+    text-align: center;
+}
+
+.form-control {
+    background-color: #3d444a;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+.form-control::placeholder {
+    color: #fff;
+    opacity: .5;
+}
+
+.form-control:focus {
+    background-color: inherit;
+    color: inherit;
+}
+
+.btn {
+    background-color: #fff;
+
+    width: 50%;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* ------------------------------------------- footer */
+
+.--social-footer {
+    padding-top: 1em;
+}
+
+.--social-footer-items a i {
+    font-size: 2em;
+}

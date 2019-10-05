@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Aether</title>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="top-of-page">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-bran --navbar-logo" href="#">
                 <img src="/images/logo.jpg" alt="Aether logo" class="--img-logo">
@@ -26,54 +27,211 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="--menu-item">
-                        <a class="--menu-link --uppercase --letter-space" href="#">Home</a>
+                        <a class="--menu-link --uppercase --letter-space" href="#top-pf-page">Home</a>
                     </li>
                     <li class="--menu-item">
-                        <a class="--menu-link --uppercase --letter-space" href="#">About</a>
+                        <a class="--menu-link --uppercase --letter-space" href="#about-page">About</a>
                     </li>
                     <li class="--menu-item">
-                        <a class="--menu-link --uppercase --letter-space" href="#">Portfolio</a>
+                        <a class="--menu-link --uppercase --letter-space" href="#client-page">Clients</a>
                     </li>
                     <li class="--menu-item">
-                        <a class="--menu-link --uppercase --letter-space" href="#">Store</a>
+                        <a class="--menu-link --uppercase --letter-space" href="#contact-page">Contact</a>
+                    </li>
+                    <li class="--menu-item">
+                        <a class="--menu-link --uppercase --letter-space" href="#contact-page">Store <span>(external)</span></a>
+                    </li>
+                    <li class="--menu-item">
+                        <ul class="--social-links --social-nav">
+                            <li class="--social-links-item --social-nav-item">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="--social-links-item --social-nav-item">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-spotify" aria-hidden="true"></i>
+                                    <span class="sr-only">Spotify</span>
+                                </a>
+                            </li>
+                            <li class="--social-links-item --social-nav-item">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="--social-links-item --social-nav-item">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-soundcloud" aria-hidden="true"></i>
+                                    <span class="sr-only">Soundcloud</span>
+                                </a>
+                            </li>
+                            <li class="--social-links-item --social-nav-item">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                                    <span class="sr-only">YouTube</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <!--- home-->
+        <!--- home page landing -->
 
         <div class="row --landing">
             <div class="col">
-                    <h1 class="--main-heading">Aether</h1>
-                    <p class="--main-heading">Musician, Freelance Composer</p>
+                <h1 class="--main-heading">Aether</h1>
+                <p class="--main-heading">Musician, Freelance Composer</p>
             </div>
         </div>
 
-        <!-- about -->
+        <!-- about page content -->
 
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 --twitter-container">
-            <h2 class="--section-heading --uppercase --letter-space">Latest</h1>
+        <div class="row --about-page" id="about-page">
+            <div class="d-none d-md-block col-md-4 --twitter">
+                <h2 class="--section-heading --uppercase --letter-space">Latest</h2>
                 <a class="twitter-timeline" href="https://twitter.com/AetherAudio?ref_src=twsrc%5Etfw%22%3ETweets"
                     data-height="600"> by AetherAudio</a>
             </div>
             <div class="col-md-8">
                 <h2 class="--section-heading --uppercase --letter-space">About</h2>
+                <div class="--about-page-section">
+                    <img class="--about-portrait" src="/images/aether-portrait.jpg" alt="">
+                </div>
                 <p>Jason Taylor, better known under the music alias Aether, is a professional music composer and
                     producer hailing from Scotland. Having started this project in 2013, Aether has gone on to vastly
                     evolve and improve his diverse sound over the years. This had led him towards opportunities working
-                    with game developers to bring music to their worlds.</p>
+                    with game developers to bring music to their worlds.
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Nulla, consectetur recusandae aperiam autem voluptates eius cumque, quos quasi
+                    porro cupiditate quia facilis magni hic exercitationem expedita necessitatibus impedit! Molestias
+                    enim quae magni adipisci accusamus iusto eius itaque non sint deleniti! Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Illum explicabo placeat sapiente laboriosam quasi, et harum!
+                    Molestias excepturi possimus quisquam sequi itaque sunt! Tempora iusto nihil autem molestias ducimus
+                    magnam minima explicabo ipsa! A cum provident iste ipsa exercitationem minus itaque quia, laborum
+                    iusto? Beatae magnam odit a tempore hic.</p>
             </div>
         </div>
+
+        <!-- clients page content -->
+
+        <div class="row --clients-page" id="client-page">
+            <div class="col">
+                <h2 class="--section-heading --uppercase --letter-space">Clients</h2>
+                <ul class="--client-card-frame">
+                    <li class="--client-card">
+                        <a href="#" class="--client-link">
+                            <img class="--client-logo" src="/images/polygontreehouselogo.jpg"
+                                alt="polygon treehouse logo">
+                        </a>
+                        <h3 class="--client-title">Polygon Treehouse</h3>
+                        <p class="--client-desc">Röki is a dark, faity-tale game set in a Scandanavian folklore fantasy.
+                            Here
+                            the
+                            player takes control of Tove and explores a vast and beautiful world full of mysteries and
+                            monsters.
+                            I
+                            set out to create an atmosphere that allows the player to truly sink into the world. By
+                            creating
+                            a
+                            wide
+                            variety of ambient textures, lush melodies and sometimes intense orchestral suites, together
+                            with
+                            the
+                            stunning visual arts, we created a truly immersive experience.</p>
+                    </li>
+                    <li class="--client-card">
+                        <a href="#" class="--client-link">
+                            <img class="--client-logo" src="/images/lion-shield.png" alt="lion shield logo">
+                        </a>
+                        <h3 class="--client-title">Lion Shield</h3>
+                        <p class="--client-desc">Kingdoms and Castles is a medievil themed city building game of which
+                            you
+                            develop
+                            your desolate island to a sprawling kingdom whilst overcoming any threats that may present
+                            themselves! I
+                            set out to create something that mixes an old pallet of sounds with a modern take on music
+                            composition
+                            in a way that I could create catchy melodies to fit in the background whilst the player
+                            builds
+                            their
+                            kingdom. There is also some heavier orchestral sections I wrote to accompany the in game
+                            invasions.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row --contact-page" id="contact-page">
+            <div class="col">
+                <h2 class="--section-heading --uppercase --letter-space">Contact</h2>
+                <form class="--contact-page-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="fullnameinput" placeholder="Your full name...">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="emailinput" placeholder="Your e-mail...">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="messageinput" placeholder="Your message to Aether..."
+                            rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn --uppercase --letter-space">Submit</button>
+                </form>
+
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="row --footer">
+                <div class="col">
+                    <ul class="--social-links --social-footer">
+                        <li class="--social-links-item --social-footer-items">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="--social-links-item --social-footer-items">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-spotify" aria-hidden="true"></i>
+                                <span class="sr-only">Spotify</span>
+                            </a>
+                        </li>
+                        <li class="--social-links-item --social-footer-items">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="--social-links-item --social-footer-items">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-soundcloud" aria-hidden="true"></i>
+                                <span class="sr-only">Soundcloud</span>
+                            </a>
+                        </li>
+                        <li class="--social-links-item --social-footer-items">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                                <span class="sr-only">YouTube</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
     </div>
 
-    <section></section>
-
-    <footer>
-
-    </footer>
-    </div>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -81,6 +239,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
