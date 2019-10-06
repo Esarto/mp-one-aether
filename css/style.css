@@ -39,6 +39,12 @@ h3 {
 
 /* ------------------------------------------- navbar */
 
+.navbar {
+    padding-bottom: 1.4em;
+    background: #fff;
+    border-bottom: 2px solid #bbb;
+}
+
 .--navbar-logo {
     width: 66px;
     margin: 0 auto;
@@ -51,13 +57,13 @@ h3 {
 .navbar-toggler {
     position: absolute;
     top: 0;
-    right: 0;
+    right: .5em;
     margin-top: 23px;
 }
 
-.navbar {
-    padding-bottom: 1.5em;
-    border-bottom: 1px solid #bbb;
+.navbar-toggler span {
+    font-size: 1.4em;
+    color: rgba(0,0,0,0.4);
 }
 
 .navbar button:focus {
@@ -90,7 +96,12 @@ h3 {
 }
 
 .--menu-link:hover {
-    color: #333;
+    color: #777;
+    text-decoration: none;
+}
+
+.--social-nav {
+    margin-top: .2em;
 }
 
 .--social-links {
@@ -207,7 +218,7 @@ h3 {
 
 .form-control::placeholder {
     color: #fff;
-    opacity: .5;
+    opacity: .6;
 }
 
 .form-control:focus {
@@ -226,9 +237,9 @@ h3 {
 /* ------------------------------------------- footer */
 
 .--social-footer {
-    padding-top: 1em;
+    padding-top: 1.2em;
 }
 
 .--social-footer-items a i {
-    font-size: 2em;
+    font-size: 1.5em;
 }

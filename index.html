@@ -15,60 +15,63 @@
 
 <body>
     <div class="container-fluid" id="top-of-page">
-        <nav class="navbar navbar-expand-lg navbar-light">
+
+        <!-- navbar -->
+
+        <nav class="navbar navbar-expand-lg fixed-top">
             <a class="navbar-bran --navbar-logo" href="#">
-                <img src="/images/logo.jpg" alt="Aether logo" class="--img-logo">
+                <img src="../images/logo.jpg" alt="Aether logo" class="--img-logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="fa fa-ellipsis-v"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="--menu-item">
-                        <a class="--menu-link --uppercase --letter-space" href="#top-pf-page">Home</a>
+                    <li class="--menu-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="--menu-link --uppercase --letter-space" href="#top-of-page">Home</a>
                     </li>
-                    <li class="--menu-item">
+                    <li class="--menu-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a class="--menu-link --uppercase --letter-space" href="#about-page">About</a>
                     </li>
-                    <li class="--menu-item">
+                    <li class="--menu-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a class="--menu-link --uppercase --letter-space" href="#client-page">Clients</a>
                     </li>
-                    <li class="--menu-item">
+                    <li class="--menu-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a class="--menu-link --uppercase --letter-space" href="#contact-page">Contact</a>
                     </li>
-                    <li class="--menu-item">
-                        <a class="--menu-link --uppercase --letter-space" href="#contact-page">Store <span>(external)</span></a>
+                    <li class="--menu-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="--menu-link --uppercase --letter-space" href="https://aetheraudio.bandcamp.com/" target="_blank">Store <span>(external)</span></a>
                     </li>
-                    <li class="--menu-item">
+                    <li class="--menu-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <ul class="--social-links --social-nav">
                             <li class="--social-links-item --social-nav-item">
-                                <a href="#" target="_blank">
+                                <a href="https://www.facebook.com/aetheraudio/" target="_blank">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                     <span class="sr-only">Facebook</span>
                                 </a>
                             </li>
                             <li class="--social-links-item --social-nav-item">
-                                <a href="#" target="_blank">
+                                <a href="https://open.spotify.com/artist/5UyjnQfu4OsLGiOi3sIoEN" target="_blank">
                                     <i class="fa fa-spotify" aria-hidden="true"></i>
                                     <span class="sr-only">Spotify</span>
                                 </a>
                             </li>
                             <li class="--social-links-item --social-nav-item">
-                                <a href="#" target="_blank">
+                                <a href="https://www.instagram.com/aetheraudio/" target="_blank">
                                     <i class="fa fa-instagram" aria-hidden="true"></i>
                                     <span class="sr-only">Instagram</span>
                                 </a>
                             </li>
                             <li class="--social-links-item --social-nav-item">
-                                <a href="#" target="_blank">
+                                <a href="https://soundcloud.com/aetheraudio" target="_blank">
                                     <i class="fa fa-soundcloud" aria-hidden="true"></i>
                                     <span class="sr-only">Soundcloud</span>
                                 </a>
                             </li>
                             <li class="--social-links-item --social-nav-item">
-                                <a href="#" target="_blank">
+                                <a href="https://www.youtube.com/channel/UCAVq6U2AKkQ8AfVYPpdzsZA" target="_blank">
                                     <i class="fa fa-youtube" aria-hidden="true"></i>
                                     <span class="sr-only">YouTube</span>
                                 </a>
@@ -99,7 +102,7 @@
             <div class="col-md-8">
                 <h2 class="--section-heading --uppercase --letter-space">About</h2>
                 <div class="--about-page-section">
-                    <img class="--about-portrait" src="/images/aether-portrait.jpg" alt="">
+                    <img class="--about-portrait" src="../images/aether-portrait.jpg" alt="">
                 </div>
                 <p>Jason Taylor, better known under the music alias Aether, is a professional music composer and
                     producer hailing from Scotland. Having started this project in 2013, Aether has gone on to vastly
@@ -125,8 +128,8 @@
                 <h2 class="--section-heading --uppercase --letter-space">Clients</h2>
                 <ul class="--client-card-frame">
                     <li class="--client-card">
-                        <a href="#" class="--client-link">
-                            <img class="--client-logo" src="/images/polygontreehouselogo.jpg"
+                        <a href="https://twitter.com/PolyTreehouse" target="_blank" class="--client-link">
+                            <img class="--client-logo" src="../images/polygontreehouselogo.jpg"
                                 alt="polygon treehouse logo">
                         </a>
                         <h3 class="--client-title">Polygon Treehouse</h3>
@@ -146,8 +149,8 @@
                             stunning visual arts, we created a truly immersive experience.</p>
                     </li>
                     <li class="--client-card">
-                        <a href="#" class="--client-link">
-                            <img class="--client-logo" src="/images/lion-shield.png" alt="lion shield logo">
+                        <a href="https://twitter.com/KingdomsCastles" target="_blank" class="--client-link">
+                            <img class="--client-logo" src="../images/lion-shield.png" alt="lion shield logo">
                         </a>
                         <h3 class="--client-title">Lion Shield</h3>
                         <p class="--client-desc">Kingdoms and Castles is a medievil themed city building game of which
@@ -168,6 +171,7 @@
             </div>
         </div>
 
+        <!-- contact page content -->
 
         <div class="row --contact-page" id="contact-page">
             <div class="col">
@@ -190,36 +194,38 @@
             </div>
         </div>
 
+        <!-- footer -->
+
         <footer>
             <div class="row --footer">
                 <div class="col">
                     <ul class="--social-links --social-footer">
                         <li class="--social-links-item --social-footer-items">
-                            <a href="#" target="_blank">
+                            <a href="https://www.facebook.com/aetheraudio/" target="_blank">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                                 <span class="sr-only">Facebook</span>
                             </a>
                         </li>
                         <li class="--social-links-item --social-footer-items">
-                            <a href="#" target="_blank">
+                            <a href="https://open.spotify.com/artist/5UyjnQfu4OsLGiOi3sIoEN" target="_blank">
                                 <i class="fa fa-spotify" aria-hidden="true"></i>
                                 <span class="sr-only">Spotify</span>
                             </a>
                         </li>
                         <li class="--social-links-item --social-footer-items">
-                            <a href="#" target="_blank">
+                            <a href="https://www.instagram.com/aetheraudio/" target="_blank">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
                                 <span class="sr-only">Instagram</span>
                             </a>
                         </li>
                         <li class="--social-links-item --social-footer-items">
-                            <a href="#" target="_blank">
+                            <a href="https://soundcloud.com/aetheraudio" target="_blank">
                                 <i class="fa fa-soundcloud" aria-hidden="true"></i>
                                 <span class="sr-only">Soundcloud</span>
                             </a>
                         </li>
                         <li class="--social-links-item --social-footer-items">
-                            <a href="#" target="_blank">
+                            <a href="https://www.youtube.com/channel/UCAVq6U2AKkQ8AfVYPpdzsZA" target="_blank">
                                 <i class="fa fa-youtube" aria-hidden="true"></i>
                                 <span class="sr-only">YouTube</span>
                             </a>
