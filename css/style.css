@@ -106,6 +106,8 @@ h3 {
     text-decoration: none;
 }
 
+/* ------------------------------------------- social links (nav/footer) */
+
 .--social-nav {
     margin-top: .2em;
 }
@@ -140,8 +142,13 @@ h3 {
 /* ------------------------------------------- home */
 
 .--landing {
-    margin: 17em 0;
+    height: 100vh;
     padding: 0;
+}
+
+.--center {
+    position: relative;
+    top: 40%;
 }
 
 .--landing h1 {
@@ -151,6 +158,25 @@ h3 {
 .--landing p {
     font-size: 1.5em;
     font-weight: 400;
+}
+
+.--scroll {
+    position: absolute;
+    font-size: 2.5em;
+    top: 47%;
+    padding-left: 10px;
+    color: #3D444A;
+    animation: scroll 1s infinite alternate;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+
 }
 
 /* ------------------------------------------- about */
@@ -192,7 +218,8 @@ h3 {
 }
 
 .--client-logo {
-    max-width: 60%;
+    max-width: 100%;
+    min-height: 150px;
     max-height: 150px;
 }
 
