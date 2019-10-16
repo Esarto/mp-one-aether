@@ -163,7 +163,7 @@ h3 {
 .--scroll {
     position: absolute;
     font-size: 2.5em;
-    top: 47%;
+    top: 42%;
     padding-left: 10px;
     color: #3D444A;
     animation: scroll 1s infinite alternate;
